@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000;
 // Require Framework
 const express = require('express');
 const hbs = require('hbs');
@@ -48,6 +49,6 @@ app.get('/about', (req, res) => {
   });
 });
 // Route End
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server online!');
 });
